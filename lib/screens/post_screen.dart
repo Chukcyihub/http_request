@@ -28,7 +28,8 @@ class _PostScreenState extends State<PostScreen> {
       }
       return posts;
     } on SocketException {
-      // TODO: And snakbar to display the error "No Internet access"
+      // ignore: todo
+      // TODO: And snackbar to display the error "No Internet access"
       // print("no internet access on you device");
     }
   }
@@ -77,6 +78,11 @@ class PostList extends StatelessWidget {
               onTap: () {
                 // getPost();
               },
+              leading: Text(
+                index[i].id.toString(),
+                style: const TextStyle(
+                    fontSize: 20.0, fontWeight: FontWeight.bold),
+              ),
               title: Text(index[i].title),
             ),
             const Divider(
