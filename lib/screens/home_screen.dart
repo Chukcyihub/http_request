@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_http/screens/comments_screen.dart';
+import 'package:flutter_http/screens/photo_screen.dart';
 import 'package:flutter_http/screens/post_screen.dart';
 import 'package:flutter_http/screens/user_screen.dart';
 
@@ -54,6 +55,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ))),
               child: const Text('Post'),
+            ),
+            ElevatedButton(
+              onPressed: ((() => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) => const PhotoScreen()),
+                    ),
+                  ))),
+              child: const Text('Photo'),
             ),
           ],
         ),

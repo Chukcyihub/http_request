@@ -84,6 +84,7 @@ class PostList extends StatelessWidget {
                     fontSize: 20.0, fontWeight: FontWeight.bold),
               ),
               title: Text(index[i].title),
+              trailing: const Icon(Icons.arrow_forward_ios_rounded),
             ),
             const Divider(
               color: Colors.amber,
